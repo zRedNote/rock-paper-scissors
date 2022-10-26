@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/specimen/Raleway?preview.text=Type%20something&preview.text_type=custom);
+@import url(https://fonts.google.com/specimen/Cabin?preview.text=ROCK%20PAPER%20SCISSORS%20&preview.text_type=custom);
+
+
+html {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle farthest-corner at center, 
+    rgba(252, 242, 240, 1) 35%, rgba(238, 246, 241, 1) 65%, 
+    rgba(241, 244, 251, 1) 100%);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 11px 10px 2px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 11px 10px 2px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 11px 10px 2px rgba(0, 0, 0, 0.17);
+    height: 120px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+
+.container-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-two {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fcf2f0;    
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 9px 21px 8px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 9px 21px 8px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 9px 21px 8px rgba(34, 60, 80, 0.2);
+    height: 200px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+input:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+input:hover {
+    cursor: pointer;
+    
+}
+
+input {
+    color: rgba(255, 255, 255, 0);
+}
+
+.rock {
+    background: url("images/rock.png");
+    width: 171px;
+    height: 170px;
+    border: none;
+    padding: 1px;
+}
+
+.paper {
+    background: url("images/paper.png");
+    width: 171px;
+    height: 170px;
+    border: none;
+    padding: 1px;
+}
+
+.scissors {
+    background: url("images/scissors.png");
+    width: 171px;
+    height: 170px;
+    border: none;
+    padding: 1px;
+}
+
+p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.box>img {
+    border-radius: 16px;
+}
+
+.result {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    width: 450px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    background: radial-gradient(#ffefba, #ffffff);
+    -webkit-box-shadow: 0px 0px 37px 12px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 0px 37px 12px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 37px 12px rgba(0, 0, 0, 0.2);
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    height: 300px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+}
